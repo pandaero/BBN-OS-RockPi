@@ -24,13 +24,7 @@ adduser --uid 1000 --home /home/user --quiet --disabled-password -gecos "lysmari
 echo 'user:changeme' | chpasswd
 echo "user ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
-groupadd -r -f i2c
-groupadd -r -f i2c
-groupadd -r -f i2c
-groupadd -r -f i2c
-groupadd -r -f i2c
-groupadd -r -f i2c
-groupadd -r -f i2c
+groupadd -r -f bluetooth
 groupadd -r -f i2c
 groupadd -r -f spi
 groupadd -r -f gpio
