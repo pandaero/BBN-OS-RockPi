@@ -83,6 +83,9 @@ pushd ./stageCache
 
 #  apt-get install -yq python3-rtimulib2-pypilot
 
+# TODO:
+  if [ 1 == 0 ]; then
+  
   echo "Get pypilot"
   if [[ ! -d ./pypilot ]]; then
     git clone https://github.com/pypilot/pypilot.git
@@ -116,7 +119,12 @@ pushd ./stageCache
     python3 setup.py install
     python3 setup.py clean --all
   popd
+
+  fi # TODO
 popd
+
+# TODO
+if [ 1 == 0 ]; then
 
 ## Install the service files
 install -v -m 0644 "$FILE_FOLDER"/pypilot@.service "/etc/systemd/system/"
@@ -136,6 +144,8 @@ systemctl disable pypilot_hat.service
 systemctl enable pypilot@pypilot.service                               # listens on tcp 20220 and 23322
 systemctl enable pypilot_web.service                                   # listens on tcp 8080
 systemctl enable pypilot_detect.service                                # tries to detect pypilot hardware (hat)
+
+fi # TODO
 
 ## Install the user config files
 install -v -o pypilot -g pypilot -m 0775 -d "/home/pypilot/.pypilot"
