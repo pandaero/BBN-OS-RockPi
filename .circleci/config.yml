@@ -57,9 +57,19 @@ jobs:
       - EMU=off
     steps:
       - do-all
+  build-armbian-bullseye-arm64:
+    executor: boot-linux-arm
+    environment:
+      - DOCKER_IMAGE=arm64v8/debian:bullseye
+      - CONTAINER_DISTRO=debian:bullseye
+      - PKG_RELEASE=armbian
+      - PKG_DISTRO=bullseye
+      - PKG_ARCH=arm64
+      - EMU=off
+    steps:
+      - do-all
 workflows:
   version: 2
   build_all:
     jobs:
-      - build-raspbian-bullseye-arm64
-#      - build-raspbian-bullseye-arm32
+      - build-armbian-bullseye-arm64
