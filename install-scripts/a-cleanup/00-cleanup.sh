@@ -4,7 +4,7 @@ rm -rvf /home/user/Public /home/user/Templates
 
 apt-get clean
 
-apt-get remove -y --purge greybird-gtk-theme murrine-themes rpd-icons userconf-pi
+apt-get remove -y --purge greybird-gtk-theme murrine-themes # rpd-icons userconf-pi
 
 apt-get -y autoremove
 apt-get clean
