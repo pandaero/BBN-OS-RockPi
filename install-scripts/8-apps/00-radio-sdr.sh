@@ -256,7 +256,7 @@ cd "$mdir"
 
 #################################
 
-apt-get install -y cmake
+apt-get install -y cmake aclocal autotools-dev 
 
 pushd /usr/local/share
   git clone --depth=1 https://github.com/bareboat-necessities/aisdecoder
