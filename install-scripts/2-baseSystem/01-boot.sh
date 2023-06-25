@@ -46,7 +46,7 @@ plymouth-set-default-theme dreams
 
 # Armbian
 if [ -f /etc/issue ]; then
-	rm /etc/issue /etc/issue.net
+  rm -f /etc/issue /etc/issue.net
 fi
 
 # Raspbian enable this to intercept keystroke during the boot process, (for ondemand cup freq management.) We don't want to set it that way.
@@ -60,10 +60,6 @@ bash -c 'cat << EOF > /etc/systemd/system/console-setup.service.d/override.conf
 [Unit]
 After=systemd-tmpfiles-setup.service
 EOF'
-
-## Armbian specific
-rm /etc/issue || true
-rm /etc/issue.net || true
 
 #
 #install -v -d "/etc/systemd/system/keyboard-setup.service.d"
