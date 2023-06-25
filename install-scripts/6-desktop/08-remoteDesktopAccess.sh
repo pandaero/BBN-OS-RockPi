@@ -2,7 +2,7 @@
 
 apt-get clean
 
-x11vnc=0
+x11vnc=1
 if [ $x11vnc == 1 ]; then
   apt-get install -y -q x11vnc
 
