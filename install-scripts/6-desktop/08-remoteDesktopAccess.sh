@@ -12,8 +12,6 @@ if [ $x11vnc == 1 ]; then
 
   ## NOTE: The password file have been generated with the command
   ## x11vnc -storepasswd SECRETPASSWORD /home/user/.vnc/passwd
-else
-  apt-get -y install realvnc-vnc-server
 fi
 
 install -d /etc/systemd/system/xrdp.d
