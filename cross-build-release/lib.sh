@@ -78,7 +78,7 @@ umountImageFile() {
   umount "$rootfs"/tmp
   umount "$rootfs"/install-scripts/stageCache
   umount "$rootfs"/run/shm
-  umount "$rootfs"/boot
+  #umount "$rootfs"/boot
   umount "$rootfs"
 
   kpartx -d "$imageFile"
