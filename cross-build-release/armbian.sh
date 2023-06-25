@@ -5,7 +5,7 @@
   MY_CPU_ARCH=$1
   LYSMARINE_VER=$2
 
-  thisArch="raspios"
+  thisArch="armbian"
   cpuArch="arm64"
 
   # https://mirrors.aliyun.com/armbian-releases/rockpi-4cplus/archive/Armbian_v22.05.2_Rockpi-4cplus_bullseye_current_6.1.33_minimal.img.xz
