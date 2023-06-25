@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-apt-get install -y liblzma5 libicu67 libzstd1 libxapian30 libcurl3-gnutls aria2
+apt-get install -y liblzma5 libicu67 libzstd1 libxapian30 libcurl3-gnutls libpugixml1v5 aria2
 
 if [ "$LMARCH" == 'arm64' ]; then
   wget https://github.com/bareboat-necessities/lysmarine_gen/releases/download/vTest/libzim7_7.2.0.0_arm64.deb
