@@ -9,8 +9,9 @@
   cpuArch="arm64"
 
   # https://mirrors.aliyun.com/armbian-releases/rockpi-4cplus/archive/Armbian_v22.05.2_Rockpi-4cplus_bullseye_current_6.1.33_minimal.img.xz
-  zipName="Armbian_v22.05.2_Rockpi-4cplus_bullseye_current_6.1.33_minimal.img.xz"
-  imageSource="https://mirrors.aliyun.com/armbian-releases/rockpi-4cplus/archive/${zipName}"
+  # https://armbian.hosthatch.com/archive/rockpi-4cplus/archive/Armbian_23.02.2_Rockpi-4cplus_bullseye_current_5.15.93_minimal.img.xz
+  zipName="Armbian_23.02.2_Rockpi-4cplus_bullseye_current_5.15.93_minimal.img.xz"
+  imageSource="https://armbian.hosthatch.com/archive/rockpi-4cplus/archive/${zipName}"
 
   checkRoot
 
