@@ -73,11 +73,6 @@ pushd /home/signalk/.signalk
                  freeboard-sk-helper  \
                  skwiz  \
                  tuktuk-chart-plotter  \
-                 signalk-raspberry-pi-bme280  \
-                 signalk-raspberry-pi-bmp180  \
-                 signalk-raspberry-pi-ina219  \
-                 signalk-raspberry-pi-1wire  \
-                 signalk-raspberry-mcs  \
                  signalk-venus-plugin  \
                  signalk-mqtt-gw  \
                  signalk-mqtt-home-asisstant  \
@@ -109,7 +104,6 @@ pushd /home/signalk/.signalk
                  node-red-contrib-sensor-htu21d \
                  node-red-contrib-ina-sensor \
                  signalk-sonoff-ewelink  \
-                 signalk-raspberry-pi-monitoring  \
                  @mxtommy/kip  \
                  signalk-fusion-stereo  \
                  signalk-barometer-trend  \
