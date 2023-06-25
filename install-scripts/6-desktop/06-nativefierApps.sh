@@ -2,7 +2,7 @@
 
 apt-get clean
 
-apt-get -y -q install nodejs libnss3 gnome-icon-theme unzip
+apt-get -y -q install nodejs libnss3 gnome-icon-theme unzip hardlink
 
 npm install nativefier electron -g --unsafe-perm --production
 
