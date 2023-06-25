@@ -200,7 +200,9 @@ sed '1 i :msg, contains, "Failed to open I2C bus" stop' -i /etc/rsyslog.conf
 sed '1 i :msg, contains, "Using fusion algorithm Kalman" stop' -i /etc/rsyslog.conf
 
 # prevent pypilot from changing port
-sed -i 's/8000/8080/' /etc/systemd/system/pypilot_web.service || true
+if [ -f  /etc/systemd/system/pypilot_web.service ]; then
+  sed -i 's/8000/8080/' /etc/systemd/system/pypilot_web.service || true
+fi
 
 # TODO: temp patch
 install -m 644 "$FILE_FOLDER"/wind.py "$(find /usr/local/lib -name wind.py)"
