@@ -7,7 +7,7 @@ apt-get -q -y install i2c-tools python3-smbus dos2unix traceroute telnet whois s
   dconf-editor gedit gnome-calculator gnome-chess openpref \
   python3-gpiozero libusb-1.0-0-dev \
   sysstat jq xmlstarlet uhubctl iotop rsync timeshift restic at \
-  rpi-imager piclone fontconfig gnome-disk-utility catfish xfce4-screenshooter hardinfo baobab # nautic foxtrotgps
+  fontconfig gnome-disk-utility catfish xfce4-screenshooter hardinfo baobab # rpi-imager piclone nautic foxtrotgps
 
 systemctl disable openvpn
 
