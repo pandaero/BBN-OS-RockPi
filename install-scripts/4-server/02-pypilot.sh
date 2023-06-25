@@ -23,7 +23,7 @@ apt-get install -y -q --no-install-recommends git  build-essential python3 pytho
   python3-opengl python3-wxgtk4.0 \
   libffi-dev python3-gevent python3-zeroconf watchdog lirc gpiod lm-sensors ir-keytable \
   python3-opengl \
-  python3-rpi.gpio \
+  python3-rpi.gpio apt-offline \
   libelf1 libftdi1-2 libhidapi-libusb0 libusb-0.1-4 libusb-1.0-0 \
   meson cmake make acl octave # https://kingtidesailing.blogspot.com/2016/02/how-to-setup-mpu-9250-on-raspberry-pi_25.html
 
@@ -40,7 +40,7 @@ export MAKEFLAGS='-j 4'
 
 if [ "$LMARCH" == 'arm64' ]; then
   pip3 install pywavefront pyglet gps gevent-websocket websocket-client importlib_metadata \
-    python-socketio flask-socketio wmm2020 python3-apt
+    python-socketio flask-socketio wmm2020 
 else
   apt-get install -y -q python3-flask-socketio
   pip3 install pywavefront pyglet gps gevent-websocket importlib_metadata "python-socketio<5" wmm2020
