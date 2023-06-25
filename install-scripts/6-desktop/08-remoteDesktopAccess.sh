@@ -28,6 +28,4 @@ systemctl disable xrdp-sesman
 
 if [ $x11vnc == 1 ]; then
   systemctl enable vnc
-else
-  systemctl enable vncserver-x11-serviced.service
 fi
