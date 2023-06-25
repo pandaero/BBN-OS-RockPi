@@ -61,6 +61,10 @@ bash -c 'cat << EOF > /etc/systemd/system/console-setup.service.d/override.conf
 After=systemd-tmpfiles-setup.service
 EOF'
 
+## Armbian specific
+rm /etc/issue || true
+rm /etc/issue.net || true
+
 #
 #install -v -d "/etc/systemd/system/keyboard-setup.service.d"
 #bash -c 'cat << EOF > /etc/systemd/system/keyboard-setup.service.d/override.conf
