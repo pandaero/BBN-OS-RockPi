@@ -40,7 +40,7 @@ export MAKEFLAGS='-j 4'
 
 if [ "$LMARCH" == 'arm64' ]; then
   pip3 install pywavefront pyglet gps gevent-websocket websocket-client importlib_metadata \
-    python-socketio flask-socketio wmm2020
+    python-socketio flask-socketio wmm2020 python3-apt
 else
   apt-get install -y -q python3-flask-socketio
   pip3 install pywavefront pyglet gps gevent-websocket importlib_metadata "python-socketio<5" wmm2020
