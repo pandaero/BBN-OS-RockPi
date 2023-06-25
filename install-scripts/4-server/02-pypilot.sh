@@ -205,7 +205,7 @@ if [ -f  /etc/systemd/system/pypilot_web.service ]; then
 fi
 
 # TODO: temp patch
-install -m 644 "$FILE_FOLDER"/wind.py "$(find /usr/local/lib -name wind.py)"
+#install -m 644 "$FILE_FOLDER"/wind.py "$(find /usr/local/lib -name wind.py)"
 
 # TODO: not needed after changing pypilot service working directory
 echo > /RTIMULib.ini
