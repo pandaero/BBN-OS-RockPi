@@ -174,7 +174,7 @@ echo "signalk ALL=(ALL) NOPASSWD: /bin/date" >>/etc/sudoers
 npm cache clean --force
 
 # For Seatalk
-systemctl disable pigpiod
+systemctl disable pigpiod || true
 
 # For Seatalk
 wget -q -O - https://raw.githubusercontent.com/MatsA/seatalk1-to-NMEA0183/master/STALK_read.py > /usr/local/sbin/STALK_read.py
