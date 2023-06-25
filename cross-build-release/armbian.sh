@@ -12,9 +12,13 @@
   # https://mirrors.aliyun.com/armbian-releases/rockpi-4cplus/archive/Armbian_v22.05.2_Rockpi-4cplus_bullseye_current_6.1.33.img.xz
   # https://armbian.hosthatch.com/archive/rockpi-4cplus/archive/Armbian_23.02.2_Rockpi-4cplus_bullseye_current_5.15.93_minimal.img.xz
   # https://armbian.hosthatch.com/archive/rockpi-4cplus/archive/Armbian_23.02.2_Rockpi-4cplus_bullseye_current_5.15.93.img.xz
-  zipName="Armbian_23.02.2_Rockpi-4cplus_bullseye_current_5.15.93.img.xz"
-  imageSource="https://armbian.hosthatch.com/archive/rockpi-4cplus/archive/${zipName}"
+ 
+  #zipName="Armbian_23.02.2_Rockpi-4cplus_bullseye_current_5.15.93.img.xz"
+  #imageSource="https://armbian.hosthatch.com/archive/rockpi-4cplus/archive/${zipName}"
 
+  zipName="Armbian_v22.05.2_Rockpi-4cplus_bullseye_current_6.1.33.img.xz"
+  imageSource="https://mirrors.aliyun.com/armbian-releases/rockpi-4cplus/archive/${zipName}"
+  
   checkRoot
 
   # Create caching folder hierarchy to work with this architecture.
