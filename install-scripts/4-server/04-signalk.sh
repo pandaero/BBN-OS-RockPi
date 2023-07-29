@@ -161,6 +161,9 @@ sed -i 's/\(filter(.*\]\)/"".join\(\1\)/'  "$(find /usr/lib/node_modules/signalk
 # use pnpm instead of npm
 sed -i 's#('"'npm',#\('pnpm'"',#' /usr/lib/node_modules/signalk-server/lib/modules.js
 
+# SignalK fix for pnpm
+sed -i -e s/--save"'",/"--save-prod'",/g /usr/lib/node_modules/signalk-server/lib/modules.js
+
 ## Give set-system-time the possibility to change the date.
 echo "signalk ALL=(ALL) NOPASSWD: /bin/date" >>/etc/sudoers
 
